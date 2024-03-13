@@ -1,5 +1,8 @@
 # Gleam Reference
 
+> [!WARNING]  
+> This is still, very, *very*, WIP. Some information is probably incorrect and there are many places that could use better wording.
+
 
 <!-- TODO: Dynamic table of contents here -->
 <!-- TODO: Use the following quote from Lewis somewhere "As our hero lambdaman says: object oriented programming is well named because if someone says you should use it then you should object" -->
