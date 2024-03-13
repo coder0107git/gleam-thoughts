@@ -18,7 +18,7 @@ Gleam is a functional programing language.
 
 
 ## Targets
-Refrence: [#109](https://github.com/gleam-lang/gleam/issues/109)
+Reference: [#109](https://github.com/gleam-lang/gleam/issues/109)
 
 ### Builtin
  - Erlang (BEAM)
