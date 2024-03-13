@@ -9,6 +9,10 @@
 Whenever or wherever you'd use BEAM or Javascript.
 
 
+## Is Gleam Imperitive?
+Gleam is a functional programing language.
+
+
 
 ## Targets
 Refrence: [#109](https://github.com/gleam-lang/gleam/issues/109)
@@ -40,13 +44,17 @@ Refrence: [#109](https://github.com/gleam-lang/gleam/issues/109)
  - JS in WebView (e.g. [Tauri](https://tauri.app/))
 
 
+## Does Gleam Have A Garbage Collector?
+Gleam itself does not have a garbage collector as it source-to-source compiles from Gleam to Javascript and Erlang. However, Erlang and Javascript do have a garbage collector. Don't let having a garbage collector fool you into thinking it's slow, Erlang (BEAM) powers giants like Discord and WhatsApp easily.
+
+
 
 ## Division By Zero 
 Gleam doesn't throw errors unless explicitly told to do so. So it just doesn't throw an error. There is also [this](https://www.hillelwayne.com/post/divide-by-zero/) article that goes into more details. Also see the [Int](https://hexdocs.pm/gleam_stdlib/gleam/int.html) and [float](https://hexdocs.pm/gleam_stdlib/gleam/float.html) docs.
 
 
 
-## Crashing / Throwing Errors
+## Views On Crashing / Throwing Errors
 See the `Division By Zero` section.
 
 
@@ -86,3 +94,8 @@ This [blog post](https://mckayla.blog/posts/all-you-need-is-data-and-functions.h
 Unfortunately InteliJ doesn't support LSP<sup>`§`</sup>, the standard protocol for IDE tooling. Due to their unwillingness to implement the LSP protocol, IDE tooling maintainers either need a complex LSP to InteliJ translation layer or rewrite all their tooling for one single editor. Both options are terrible, so it's unlikely that Gleam will have offical support for InteliJ. There are however a few (old) community projects for InteliJ support.
 
 `§` - Basic support is in paid version but very basic and not in free version
+
+
+
+## No Loops?
+Gleam is a functional programing language which don't have loops. In functional languages you just use recurrsion. Infinite recursion is also very efficent in functional languages. Details as to why can be found [here](https://beautifulracket.com/explainer/recursion.html).

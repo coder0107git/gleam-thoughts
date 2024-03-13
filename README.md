@@ -1,7 +1,8 @@
 # Gleam Thoughts
-My Gleam thoughts and ideas. 
+My thoughts and ideas of Gleam.
 
 I'd suggest viewing in github.dev or vscode (it's easier to view inline comments that way).
 
 
-**Note:** This is still, very, *very*, WIP. Some inforamtion is probably incorrect and there are many places that could use better wording.
+> [!WARNING]  
+> This is still, very, *very*, WIP. Some information is probably incorrect and there are many places that could use better wording.
