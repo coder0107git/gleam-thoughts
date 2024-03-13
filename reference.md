@@ -16,6 +16,10 @@ Whenever or wherever you'd use BEAM or Javascript.
 Gleam is a functional programing language.
 
 
+## Does Gleam Have A REPL?
+Gleam does not have a REPL right now. It is a higly desired feature though so it will probably be added sometime in the future. If you'd like to work on this just ask what the status of this is. 
+
+
 
 ## Targets
 Reference: [#109](https://github.com/gleam-lang/gleam/issues/109)
