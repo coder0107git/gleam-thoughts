@@ -67,7 +67,9 @@ See the `Division By Zero` section.
 
 
 ## Gleam Written In Gleam (Bootstraping The Gleam Compiler)
-No, this is probably never gonning happen. It's easier to bootstrap a language when it's still young and small, not when it hits `1.0`. As Louis said,  ... <!-- TODO: Add a quote from Discord explaining talking about this -->
+No, this is probably never gonning happen. It's easier to bootstrap a language when it's still young and small, not when it hits `1.0`. And as Louis said:
+
+> "It would be many years of rework to get back to the same point and we’d have worse performance. Big waste of time as even if it went perfectly we’d just be back to where we were before minus whatever we would have gained from using those years on the existing compiler."
 
 
 
