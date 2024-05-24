@@ -32,27 +32,29 @@ Reference: [#109](https://github.com/gleam-lang/gleam/issues/109)
 #### Wasm
  - `Gleam->Erlang->Wasm`
     - [Firefly](https://github.com/GetFirefly/firefly)
-    - [AtomVM](https://www.atomvm.net/)
+    - [AtomVM](https://github.com/atomvm/AtomVM#readme)
  - `Gleam->Javascript->Wasm`
    - [Javy](https://github.com/bytecodealliance/javy)
    - [JCO](https://github.com/bytecodealliance/jco) ([ComponentizeJS](https://github.com/bytecodealliance/ComponentizeJS))
  - `Gleam->Wasm`
-   - WIP - Creator's doing it as part of a school project so not public at the moment.
+   - WIP - The person working on this is doing it as part of a school project, so not public at the moment.
 
 <!-- TODO: Do some more research into the targets below -->
 #### IoT / Microcontrollers / Embeded Devices
- - [AtomVM](https://www.atomvm.net/)
+ - [AtomVM](https://github.com/atomvm/AtomVM#readme)
+ - [Nerves](https://nerves-project.org/)
 
 #### Desktop
- - [AtomVM](https://www.atomvm.net/)
+ - [AtomVM](https://github.com/atomvm/AtomVM#readme)
  - [Tauri](https://tauri.app/) ([blog post](https://www.wezm.net/v2/posts/2024/gleam-tauri/))
 
 #### Andriod
- - JS in WebView (e.g. [Tauri](https://tauri.app/))
+ - Use a JS engine to run Gleam compiled to JS (i.e. [Tauri](https://tauri.app/), [AndriodX JavascriptEngine](https://developer.android.com/develop/ui/views/layout/webapps/jsengine), [Zipline](https://github.com/cashapp/zipline), etc.)
+ - Use Erlang/OTP compiled for Android ([Erlang OTP compiling guide](https://github.com/erlang/otp/blob/OTP-27.0/HOWTO/INSTALL-ANDROID.md), [demo](https://github.com/JeromeDeBretagne/erlanglauncher))
 
 
 ## Does Gleam Have A Garbage Collector?
-Gleam itself does not have a garbage collector as it source-to-source compiles from Gleam to Javascript and Erlang. However, Erlang and Javascript do have a garbage collector. Don't let having a garbage collector fool you into thinking it's slow, Erlang (BEAM) powers giants like Discord and WhatsApp easily.
+Gleam does not have it own runtime. It compiles to Erlang and Javascript which both have garbage collectors. Don't let having a garbage collector fool you into thinking it's slow though, Erlang (BEAM) powers giants like Discord and WhatsApp.
 
 
 
@@ -89,14 +91,13 @@ No. Gleam is designed to be simple and this would defeat that. If you realy want
 
 
 
-## Constants Aren't Immutable?
-They actually are, you're probably seeing shadowing in effect. Shadowing only affects local scope and doesn't mutate the orignal value. However, if it somehow turns out not to be shadowing, then please submit a bug report! 🥺🙏
+## Constants/Variables Aren't Immutable?
+Actually, they are. You're reallying just seeing shadowing in effect. The original value isn't mutated, it's just hidden by another defintion by the same name farther down. Shadowing only affects local scope and doesn't mutate the orignal value.
 
 
 
 ## Does Gleam Have `X` Datastructure?
-This [blog post](https://mckayla.blog/posts/all-you-need-is-data-and-functions.html) that discuss this in a nice, clear, and concise way.
-
+This [blog post](https://mckayla.blog/posts/all-you-need-is-data-and-functions.html) explores why Gleam only has data and functions, and not a multitude of data-structures.
 
 
 ## InteliJ Support
